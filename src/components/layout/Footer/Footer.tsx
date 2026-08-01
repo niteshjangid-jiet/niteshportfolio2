@@ -37,6 +37,8 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-4">
             <a
               href="https://github.com/niteshjangid-jiet"
+              data-security-link="social"
+              data-expected-href="https://github.com/niteshjangid-jiet"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 shadow-sm transition-all hover:scale-110"
@@ -46,6 +48,8 @@ export const Footer: React.FC = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/niteshjangid0403"
+              data-security-link="social"
+              data-expected-href="https://www.linkedin.com/in/niteshjangid0403"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 shadow-sm transition-all hover:scale-110"
@@ -55,6 +59,8 @@ export const Footer: React.FC = () => {
             </a>
             <a
               href="https://www.instagram.com/_niteshjangid_"
+              data-security-link="social"
+              data-expected-href="https://www.instagram.com/_niteshjangid_"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:border-slate-300 dark:hover:border-slate-700 shadow-sm transition-all hover:scale-110"

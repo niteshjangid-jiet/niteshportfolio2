@@ -12,6 +12,8 @@ export interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) => {
   return (
     <motion.div
+      data-project-id={project.id}
+      data-security-card="true"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
@@ -109,6 +111,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) 
         <div className="pt-4 mt-auto flex items-center justify-between border-t border-slate-200/80 dark:border-slate-800/80">
           <a
             href={project.liveUrl}
+            data-security-link="project-live"
+            data-project-id={project.id}
+            data-expected-href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-mono text-xs font-bold transition-all shadow-md shadow-indigo-500/20 hover:shadow-lg hover:shadow-indigo-500/30 group/btn"
@@ -119,6 +124,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) 
           {project.githubUrl && (
             <a
               href={project.githubUrl}
+              data-security-link="project-github"
+              data-project-id={project.id}
+              data-expected-href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs font-mono text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"

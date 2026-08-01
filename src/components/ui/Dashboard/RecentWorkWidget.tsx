@@ -47,6 +47,9 @@ export const RecentWorkWidget: React.FC<RecentWorkWidgetProps> = ({
             <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
               <a
                 href={latestProject.liveUrl}
+                data-security-link="project-live"
+                data-project-id={latestProject.id}
+                data-expected-href={latestProject.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-white text-slate-950 font-bold text-xs hover:bg-slate-100 transition-colors shadow-lg"
@@ -56,6 +59,9 @@ export const RecentWorkWidget: React.FC<RecentWorkWidgetProps> = ({
               </a>
               <a
                 href={latestProject.githubUrl}
+                data-security-link="project-github"
+                data-project-id={latestProject.id}
+                data-expected-href={latestProject.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 text-slate-200 font-semibold text-xs border border-slate-800 hover:bg-slate-800 transition-colors"
@@ -80,6 +86,9 @@ export const RecentWorkWidget: React.FC<RecentWorkWidgetProps> = ({
               </div>
               <a
                 href={proj.liveUrl}
+                data-security-link="project-live"
+                data-project-id={proj.id}
+                data-expected-href={proj.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-mono text-indigo-400 hover:underline flex items-center gap-1 shrink-0"

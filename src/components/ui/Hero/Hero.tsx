@@ -135,6 +135,8 @@ export const Hero: React.FC = () => {
           >
             <a
               href={PORTFOLIO_LINKEDIN}
+              data-security-link="social"
+              data-expected-href={PORTFOLIO_LINKEDIN}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 transition-all shadow-md font-mono text-xs font-semibold"
@@ -147,6 +149,8 @@ export const Hero: React.FC = () => {
 
             <a
               href={PORTFOLIO_INSTAGRAM}
+              data-security-link="social"
+              data-expected-href={PORTFOLIO_INSTAGRAM}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-300 hover:text-pink-600 dark:hover:text-pink-400 hover:border-pink-500/50 transition-all shadow-md font-mono text-xs font-semibold"
@@ -159,6 +163,8 @@ export const Hero: React.FC = () => {
 
             <a
               href={`mailto:${PORTFOLIO_EMAIL}`}
+              data-security-link="email"
+              data-expected-href={`mailto:${PORTFOLIO_EMAIL}`}
               className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:border-cyan-500/50 transition-all shadow-md font-mono text-xs font-semibold"
               aria-label="Send Email"
               title={`Email: ${PORTFOLIO_EMAIL}`}
@@ -169,6 +175,8 @@ export const Hero: React.FC = () => {
 
             <a
               href={`tel:${PORTFOLIO_PHONE.replace(/\s+/g, '')}`}
+              data-security-link="phone"
+              data-expected-href={`tel:${PORTFOLIO_PHONE.replace(/\s+/g, '')}`}
               className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-800 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-500/50 transition-all shadow-md font-mono text-xs font-semibold"
               aria-label="Call Phone"
               title={`Phone: ${PORTFOLIO_PHONE}`}
